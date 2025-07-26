@@ -26,6 +26,7 @@ $RECYCLE.BIN/           # 윈도우 휴지통
 # === Gradle ===
 .gradle/
 !gradle/wrapper/gradle-wrapper.jar
+!gradle-wrapper.jar
 
 # === 패키징 결과물 ===
 *.jar
@@ -56,3 +57,15 @@ keys/
 *_BASE_*.txt
 *_LOCAL_*.txt
 *_REMOTE_*.txt
+
+# .env.local, .env.dev 등도 무시
+.env*
+
+# 로그 디렉토리 무시
+/logs/
+
+# 실행파일 (macOS, Windows CLI 실행용)
+*.exe
+*.bat
+*.cmd
+*.command
