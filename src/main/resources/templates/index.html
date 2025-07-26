@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Rêve</title>
 </head>
 <body>
-$END$
+메인 홈 (루트 URL)
+<h1> Rêve 프로젝트 페이지 흐름도</h1>
+
+<h2>공통</h2>
+<ul>
+    <li><a th:href="@{/member/login}">회원 로그인</a></li>
+    <li><a th:href="@{/member/signup}">회원 가입</a></li>
+</ul>
+
+<h2>유저 영역</h2>
+<ul>
+    <li><a th:href="@{/shop/list}">상품 목록</a></li>
+    <li><a th:href="@{/shop/detail}">상품 상세</a></li>
+    <li><a th:href="@{/cart}">장바구니</a></li>
+    <li><a th:href="@{/shop/mypage}">마이페이지 대시보드</a></li>
+    <li><a th:href="@{/shop/mypage/wishlist}">위시리스트</a></li>
+    <li><a th:href="@{/shop/mypage/order}">주문 내역</a></li>
+    <li><a th:href="@{/shop/mypage/account}">계정 정보</a></li>
+    <li><a th:href="@{/shop/order/checkout}">결제 페이지</a></li>
+    <li><a th:href="@{/shop/order/confirmation}">결제 완료</a></li>
+    <li><a th:href="@{/board/notice/list}">공지사항 목록</a></li>
+    <li><a th:href="@{/board/notice/detail}">공지사항 상세</a></li>
+    <li><a th:href="@{/board/qna/list}">Q&A 목록</a></li>
+    <li><a th:href="@{/board/qna/detail}">Q&A 상세</a></li>
+    <li><a th:href="@{/board/qna/form}">Q&A 작성</a></li>
+</ul>
+
+<h2>관리자 영역</h2>
+<ul>
+    <li><a th:href="@{/admin/dashboard}">관리자 대시보드</a></li>
+    <li><a th:href="@{/admin/product/list}">상품 관리</a></li>
+    <li><a th:href="@{/admin/product/add}">상품 등록</a></li>
+    <li><a th:href="@{/admin/product/edit}">상품 수정</a></li>
+    <li><a th:href="@{/admin/order/list}">주문 관리</a></li>
+    <li><a th:href="@{/admin/member/list}">회원 관리</a></li>
+    <li><a th:href="@{/admin/board/notice/list}">공지사항 관리</a></li>
+    <li><a th:href="@{/admin/board/notice/form}">공지사항 작성</a></li>
+    <li><a th:href="@{/admin/board/qna/list}">Q&A 답변 관리</a></li>
+    <li><a th:href="@{/admin/board/qna/reply}">Q&A 답변 작성</a></li>
+    <li><a th:href="@{/admin/coupon/add}">쿠폰 등록</a></li>
+    <li><a th:href="@{/admin/coupon/edit}">쿠폰 수정</a></li>
+    <li><a th:href="@{/admin/coupon/list}">쿠폰 목록</a></li>
+</ul>
+<h2>정보</h2>
+<ul>
+    <li><a th:href="@{/info/about}">소개</a></li>
+    <li><a th:href="@{/info/terms}">이용약관</a></li>
+    <li><a th:href="@{/info/policy}">개인정보처리방침</a></li>
+</ul>
+
 </body>
 </html>
